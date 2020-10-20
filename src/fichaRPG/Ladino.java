@@ -130,4 +130,23 @@ public class Ladino extends Personagem{
 		this.incrementarHabilidade(incrementaHab);
 		this.setCaracteristicas(caracteristicas);
 	}
+	
+	public void Mostrar() {
+		System.out.println("\n \n \n");
+		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem());
+		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador() + ", o/a Ladino/a");
+		System.out.println("\n\t\tNivel: " + this.getNivel());
+		System.out.println("\n\t\tPontos de Vida Máximos: " + this.getPontosVida());
+		System.out.println("\n\t\tHabilidades: " );
+		System.out.println("\t\t Força: " + this.getHabilidade(0));
+		System.out.println("\t\t Destreza: " + this.getHabilidade(1));
+		System.out.println("\t\t Constituição: " + this.getHabilidade(2));
+		System.out.println("\t\t Inteligência: " + this.getHabilidade(3));
+		System.out.println("\t\t Sabedoria: " + this.getHabilidade(4));
+		System.out.println("\t\t Carisma: " + this.getHabilidade(5));
+		System.out.println("\n\t\tCaracterísticas: ");
+		this.mostrarCaracteristicas();
+		System.out.println("\n\t\tEquipamentos: ");
+		this.mostrarEquipamentos();
+	}
 }

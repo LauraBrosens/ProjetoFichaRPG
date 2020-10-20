@@ -1,4 +1,5 @@
 package fichaRPG;
+
 import java.util.*;
 
 public abstract class Personagem {
@@ -103,13 +104,13 @@ public abstract class Personagem {
 	public void mostrarCaracteristicas() {
 		for(String j : this.getCaracteristicas()) {
 			if (j == null) break;
-			System.out.println(j);
+			System.out.println("\t\t " + j);
 		}
 	}
 	public void mostrarEquipamentos() {
 		for(String j : this.getEquipamentos()) {
 			if (j == null) break;
-			System.out.println(j);
+			System.out.println("\t\t " + j);
 		}
 	}
 	//Getters e Setters padrão

@@ -69,7 +69,7 @@ public class Guerreiro extends Personagem {
 		default: 
 			System.out.println("Escolha inválida");
 		}
-		setEquipamentos(equipamentos);
+		this.setEquipamentos(equipamentos);
 	}
 	@Override
 	public void definirCaracteristicas() {
@@ -149,5 +149,24 @@ public class Guerreiro extends Personagem {
 		dadoLados = dadoLados/2 + 1;
 		pontosvida += (nivel-1)*(dadoLados + constMod);
 		//	}
+	}
+	
+	public void Mostrar() {
+		System.out.println("\n \n \n");
+		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem());
+		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador() + ", o/a Guerreiro/a");
+		System.out.println("\n\t\tNivel: " + this.getNivel());
+		System.out.println("\n\t\tPontos de Vida Máximos: " + this.getPontosVida());
+		System.out.println("\n\t\tHabilidades: " );
+		System.out.println("\t\t Força: " + this.getHabilidade(0));
+		System.out.println("\t\t Destreza: " + this.getHabilidade(1));
+		System.out.println("\t\t Constituição: " + this.getHabilidade(2));
+		System.out.println("\t\t Inteligência: " + this.getHabilidade(3));
+		System.out.println("\t\t Sabedoria: " + this.getHabilidade(4));
+		System.out.println("\t\t Carisma: " + this.getHabilidade(5));
+		System.out.println("\n\t\tCaracterísticas: ");
+		this.mostrarCaracteristicas();
+		System.out.println("\n\t\tEquipamentos: ");
+		this.mostrarEquipamentos();
 	}
 }
