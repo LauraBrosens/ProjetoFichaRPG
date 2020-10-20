@@ -3,7 +3,7 @@ package fichaRPG;
 import java.io.IOException;
 import java.util.*;
 
-public class MainFichaRPG {
+public class rpgMain {
 	public static void main (String[] args) throws InterruptedException {
 		Scanner leia = new Scanner(System.in);
 		String nomePersonagem, nomeJogador, classe;
@@ -120,16 +120,11 @@ public class MainFichaRPG {
 		System.out.println("\n\nE, finalmente, vamos definir as características do Clérigo\n\n");
 		clerigo.definirCaracteristicas();
 		
-		System.out.println("Nome do Personagem: " + barbaro.getNomePersonagem() + "\t\tNome do Jogador" + barbaro.getNomeJogador()
-		+ "\nNivel = " + barbaro.getNivel() + "\t\tPontos de Vida Máximos: " + barbaro.getPontosVida()
-		+ "\nHabilidades: "
-		+ "\n Força: " + barbaro.getHabilidade(0)
-		+ "");
-		
-		
-		barbaro.mostrarCaracteristicas();
-		barbaro.mostrarEquipamentos();
-		//clerigo.mostrarTruques() também
+		//Mostrar personagens geradas
+		barbaro.Mostrar(); //funciona
+		guerreiro.Mostrar(); //funciona
+		ladino.Mostrar(); //funciona
+		clerigo.Mostrar(); //funciona
 		
 		leia.close();
 	}
