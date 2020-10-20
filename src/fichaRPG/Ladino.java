@@ -25,7 +25,7 @@ public class Ladino extends Personagem{
 		else if (escolhaDeEquipamento == 2)
 			equipamentos[0] = "Espada Longa";
 		else {
-			System.out.printf("Escolha uma alternativa v·lida.");
+			System.out.printf("Escolha uma alternativa v√°lida.");
 		}
 
 		System.out.printf("Escolha o segundo equipamento: \n1 - Arco Curto + Aljava com 20 flechas \n2- Espada Curta");
@@ -38,7 +38,7 @@ public class Ladino extends Personagem{
 			equipamentos[1] = "Espada Curta";
 		}
 		else {
-			System.out.printf("Escolha uma alternativa v·lida.");
+			System.out.printf("Escolha uma alternativa v√°lida.");
 		}
 
 		System.out.printf("Escolha o terceiro equipamento: \n1 - Pacote de Assaltante\n2- Pacote de Aventureiro\n3- Pacote de Explorador\n");
@@ -54,9 +54,9 @@ public class Ladino extends Personagem{
 			equipamentos[2] = "Pacote de Explorador";
 		}
 		else {
-			System.out.printf("Escolha uma alternativa v·lida.");
+			System.out.printf("Escolha uma alternativa v√°lida.");
 		}
-		equipamentos[3] = "Armadura de couro, duas adagas e ferramentas de ladr„o";
+		equipamentos[3] = "Armadura de couro, duas adagas e ferramentas de ladr√£o";
 		this.setEquipamentos(equipamentos);
 	}
 
@@ -64,11 +64,11 @@ public class Ladino extends Personagem{
 		int pontosvida;
 		int nivel = this.getNivel();
 		int constituicao = this.getHabilidade(2);
-		System.out.println("Constituicao puxada = " + constituicao);
+		//System.out.println("Constituicao puxada = " + constituicao);
 		int constMod = (constituicao - (constituicao%2))/2 - 5;
-		System.out.println("Modificador de Constituicao: " + constMod);
+		//System.out.println("Modificador de Constituicao: " + constMod);
 		pontosvida = dadoLados+constMod;
-		System.out.println("Pontos de vida iniciais calculados: " + pontosvida);
+		//System.out.println("Pontos de vida iniciais calculados: " + pontosvida);
 		/*switch (leia.nextInt()) {
 		case 1:
 			//Rolagem de dado
@@ -79,7 +79,7 @@ public class Ladino extends Personagem{
 		//Fixo
 		dadoLados = dadoLados/2 + 1;
 		pontosvida = pontosvida + (nivel-1)*(dadoLados + constMod);
-		System.out.println("Pontos de vida totais calculados: " + pontosvida);
+		//System.out.println("Pontos de vida totais calculados: " + pontosvida);
 		//	}
 		this.setPontosVida(pontosvida);
 	}
@@ -97,7 +97,7 @@ public class Ladino extends Personagem{
 		case 18:
 			caracteristicas[17] = "Elusivo";
 		case 17:
-			caracteristicas[16] = "CaracterÌstica de ArquÈtipo de Ladino";
+			caracteristicas[16] = "Caracter√≠stica de Arqu√©tipo de Ladino";
 		case 16:
 			caracteristicas[15] = "Incremento no Valor de Habilidade";incrementaHab++;
 		case 15:
@@ -105,32 +105,32 @@ public class Ladino extends Personagem{
 		case 14:
 			caracteristicas[13] = "Sentido Cego";
 		case 13:
-			caracteristicas[12] = "CaracterÌstica de ArquÈtipo de Ladino";
+			caracteristicas[12] = "Caracter√≠stica de Arqu√©tipo de Ladino";
 		case 12:
 			caracteristicas[11] =  "Incremento no Valor de Habilidade";incrementaHab++;
 		case 11:
-			caracteristicas[10] = "Talento Confi·vel";
+			caracteristicas[10] = "Talento Confi√°vel";
 		case 10:
 			caracteristicas[9] =  "Incremento no Valor de Habilidade";incrementaHab++;
 		case 9:
-			caracteristicas[8] = "CaracterÌstica de ArquÈtipo de Ladino";
+			caracteristicas[8] = "Caracter√≠stica de Arqu√©tipo de Ladino";
 		case 8:
 			caracteristicas[7] = "Incremento no Valor de Habilidade";incrementaHab++;
 		case 7:
-			caracteristicas[6] = "Evas„o";
+			caracteristicas[6] = "Evas√£o";
 		case 6:
-			caracteristicas[5] = "EspecializaÁ„o";
+			caracteristicas[5] = "Especializa√ß√£o";
 		case 5:
 			caracteristicas[4] = "Esquiva Sobrenatural";
 		case 4:
 			caracteristicas[3] = "Incremento no Valor de Habilidade";incrementaHab++;
 		case 3:
-			caracteristicas[2] = "ArquÈtipo de Ladino";
+			caracteristicas[2] = "Arqu√©tipo de Ladino";
 		case 2:
-			caracteristicas[1] = "AÁ„o Ardilosa";
+			caracteristicas[1] = "A√ß√£o Ardilosa";
 		case 1:
-			caracteristicas[0] = "EspecializaÁ„o, Ataque Furtivo, GÌria de Ladr„o"; break;
-		default: System.out.println("Digite uma opÁ„o v·lida");
+			caracteristicas[0] = "Especializa√ß√£o, Ataque Furtivo, G√≠ria de Ladr√£o"; break;
+		default: System.out.println("Digite uma op√ß√£o v√°lida");
 		}
 		this.incrementarHabilidade(incrementaHab);
 		this.setCaracteristicas(caracteristicas);
@@ -141,15 +141,15 @@ public class Ladino extends Personagem{
 		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem());
 		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador() + ", o/a Ladino/a");
 		System.out.println("\n\t\tNivel: " + this.getNivel());
-		System.out.println("\n\t\tPontos de Vida M·ximos: " + this.getPontosVida());
+		System.out.println("\n\t\tPontos de Vida M√°ximos: " + this.getPontosVida());
 		System.out.println("\n\t\tHabilidades: " );
-		System.out.println("\t\t ForÁa: " + this.getHabilidade(0));
+		System.out.println("\t\t For√ßa: " + this.getHabilidade(0));
 		System.out.println("\t\t Destreza: " + this.getHabilidade(1));
-		System.out.println("\t\t ConstituiÁ„o: " + this.getHabilidade(2));
-		System.out.println("\t\t InteligÍncia: " + this.getHabilidade(3));
+		System.out.println("\t\t Constitui√ß√£o: " + this.getHabilidade(2));
+		System.out.println("\t\t Intelig√™ncia: " + this.getHabilidade(3));
 		System.out.println("\t\t Sabedoria: " + this.getHabilidade(4));
 		System.out.println("\t\t Carisma: " + this.getHabilidade(5));
-		System.out.println("\n\t\tCaracterÌsticas: ");
+		System.out.println("\n\t\tCaracter√≠sticas: ");
 		this.mostrarCaracteristicas();
 		System.out.println("\n\t\tEquipamentos: ");
 		this.mostrarEquipamentos();
