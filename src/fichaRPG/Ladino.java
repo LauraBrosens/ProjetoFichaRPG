@@ -16,7 +16,7 @@ public class Ladino extends Personagem{
 
 	@Override
 	public void definirEquipamentos() {
-		System.out.printf("Escolha o primeiro equipamento: \n1 - Rapieira\n2- Espada Longa");
+		System.out.println("\nEscolha o primeiro equipamento: \n\n1 - Rapieira\n2 - Espada Longa");
 		escolhaDeEquipamento = leia.nextInt();
 		String[] equipamentos = this.getEquipamentos();
 		if (escolhaDeEquipamento == 1) {
@@ -25,10 +25,10 @@ public class Ladino extends Personagem{
 		else if (escolhaDeEquipamento == 2)
 			equipamentos[0] = "Espada Longa";
 		else {
-			System.out.printf("Escolha uma alternativa válida.");
+			System.out.printf("\nEscolha uma alternativa válida.");
 		}
 
-		System.out.printf("Escolha o segundo equipamento: \n1 - Arco Curto + Aljava com 20 flechas \n2- Espada Curta");
+		System.out.println("Escolha o segundo equipamento: \n\n1 - Arco Curto + Aljava com 20 flechas \n2 - Espada Curta");
 		escolhaDeEquipamento = leia.nextInt();
 
 		if  (escolhaDeEquipamento == 1) {
@@ -38,10 +38,10 @@ public class Ladino extends Personagem{
 			equipamentos[1] = "Espada Curta";
 		}
 		else {
-			System.out.printf("Escolha uma alternativa válida.");
+			System.out.println("\nEscolha uma alternativa válida.");
 		}
 
-		System.out.printf("Escolha o terceiro equipamento: \n1 - Pacote de Assaltante\n2- Pacote de Aventureiro\n3- Pacote de Explorador\n");
+		System.out.println("Escolha o terceiro equipamento: \n\n1 - Pacote de Assaltante\n2 - Pacote de Aventureiro\n3 - Pacote de Explorador\n");
 		escolhaDeEquipamento = leia.nextInt();
 
 		if (escolhaDeEquipamento == 1) {
@@ -54,7 +54,7 @@ public class Ladino extends Personagem{
 			equipamentos[2] = "Pacote de Explorador";
 		}
 		else {
-			System.out.printf("Escolha uma alternativa válida.");
+			System.out.println("Escolha uma alternativa válida.");
 		}
 		equipamentos[3] = "Armadura de couro, duas adagas e ferramentas de ladrão";
 		this.setEquipamentos(equipamentos);
@@ -64,11 +64,11 @@ public class Ladino extends Personagem{
 		int pontosvida;
 		int nivel = this.getNivel();
 		int constituicao = this.getHabilidade(2);
-		System.out.println("Constituicao puxada = " + constituicao);
+		//System.out.println("Constituicao puxada = " + constituicao);
 		int constMod = (constituicao - (constituicao%2))/2 - 5;
-		System.out.println("Modificador de Constituicao: " + constMod);
+		//System.out.println("Modificador de Constituicao: " + constMod);
 		pontosvida = dadoLados+constMod;
-		System.out.println("Pontos de vida iniciais calculados: " + pontosvida);
+		//System.out.println("Pontos de vida iniciais calculados: " + pontosvida);
 		/*switch (leia.nextInt()) {
 		case 1:
 			//Rolagem de dado
@@ -79,7 +79,7 @@ public class Ladino extends Personagem{
 		//Fixo
 		dadoLados = dadoLados/2 + 1;
 		pontosvida = pontosvida + (nivel-1)*(dadoLados + constMod);
-		System.out.println("Pontos de vida totais calculados: " + pontosvida);
+		//System.out.println("Pontos de vida totais calculados: " + pontosvida);
 		//	}
 		this.setPontosVida(pontosvida);
 	}
@@ -138,8 +138,8 @@ public class Ladino extends Personagem{
 	
 	public void Mostrar() {
 		System.out.println("\n \n \n");
-		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem());
-		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador() + ", o/a Ladino/a");
+		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem() + ", o/a Ladino/a");
+		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador());
 		System.out.println("\n\t\tNivel: " + this.getNivel());
 		System.out.println("\n\t\tPontos de Vida Máximos: " + this.getPontosVida());
 		System.out.println("\n\t\tHabilidades: " );

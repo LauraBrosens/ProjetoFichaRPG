@@ -515,7 +515,7 @@ public class Clerigo extends Personagem{
 	public void mostrarTruques() {
 		for(String j : this.getTruques()) {
 			if (j == null) break;
-			System.out.println("\t\t" + j);
+			System.out.println("\t\t " + j);
 		}
 	}
 	public String[] getTruques() {
@@ -533,8 +533,8 @@ public class Clerigo extends Personagem{
 	
 	public void Mostrar() {
 		System.out.println("\n \n \n");
-		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem());
-		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador() + ", o/a Clérigo/a");
+		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem() + ", o/a Clérigo/a");
+		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador());
 		System.out.println("\n\t\tNivel: " + this.getNivel());
 		System.out.println("\n\t\tPontos de Vida Máximos: " + this.getPontosVida());
 		System.out.println("\n\t\tHabilidades: " );

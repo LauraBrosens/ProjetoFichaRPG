@@ -19,7 +19,7 @@ public class Barbaro extends Personagem{
 		String[] equipamentos = this.getEquipamentos();
 		//or (int i = 0; i <= getEquipamentos().length; i++) {
 		System.out.println("Escolha seu primeiro equipamento:");
-		System.out.println("\n 1 -  Machado grande \n 2 - Arma marcial");
+		System.out.println("\n 1 - Machado grande \n 2 - Arma marcial");
 		equipa = leia.nextInt();
 		switch (equipa) {
 		case 1: equipamentos[0] = "Machado Grande";break;
@@ -27,7 +27,7 @@ public class Barbaro extends Personagem{
 		default: System.out.println("Escolha inválida");
 		}
 		System.out.println("Escolha seu segundo equipamento:");
-		System.out.println("\n 1 -  Machado de Mão \n 2 - Arma Simples");
+		System.out.println("\n 1 - Machado de Mão \n 2 - Arma Simples");
 		equipa = leia.nextInt();
 		switch (equipa) {
 		case 1: equipamentos[1] = "Machado de Mão";break;
@@ -92,8 +92,8 @@ public class Barbaro extends Personagem{
 	
 	public void Mostrar() {
 		System.out.println("\n \n \n");
-		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem());
-		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador() + ", o/a Bárbaro/a");
+		System.out.println("\t\tNome do Personagem: " + this.getNomePersonagem() + ", o/a Bárbaro/a");
+		System.out.println("\n\t\tNome do Jogador: " + this.getNomeJogador());
 		System.out.println("\n\t\tNivel: " + this.getNivel());
 		System.out.println("\n\t\tPontos de Vida Máximos: " + this.getPontosVida());
 		System.out.println("\n\t\tHabilidades: " );
