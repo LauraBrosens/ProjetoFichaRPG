@@ -83,42 +83,43 @@ public class MainFichaRPG {
 		Clerigo clerigo = new Clerigo(nomePersonagem, nomeJogador, "Clerigo", nivel, 0, habilidades[3], equipamentos[3], caracteristicas[3]);
 		
 		//Barbaro
-		barbaro.definirPontosVida(12);
+		
 		System.out.println("\nAgora vamos definir as habilidades do Barbaro\n");
 		barbaro.definirHabilidades();
 		System.out.println("\n\nAgora vamos definir os equipamentos do Barbaro\n\n");
 		barbaro.definirEquipamentos();
 		System.out.println("\n\nE, finalmente, vamos definir as características do Barbaro\n\n");
 		barbaro.definirCaracteristicas();
-		
+		barbaro.definirPontosVida(12);
 		//Guerreiro
-		guerreiro.definirPontosVida(10);
+		
 		System.out.println("\n\nAgora vamos definir as habilidades do Guerreiro\n");
 		guerreiro.definirHabilidades();
 		System.out.println("\n\nAgora vamos definir os equipamentos do Guerreiro\n\n");
 		guerreiro.definirEquipamentos();
 		System.out.println("\n\nE, finalmente, vamos definir as características do Guerreiro\n\n");
 		guerreiro.definirCaracteristicas();
-		
+		guerreiro.definirPontosVida(10);
 		
 		//Ladino
-		ladino.definirPontosVida(8);
+		
 		System.out.println("\n\nAgora vamos definir as habilidades do Ladino\n");
 		ladino.definirHabilidades();
 		System.out.println("\n\nAgora vamos definir os equipamentos do Ladino\n\n");
 		ladino.definirEquipamentos();
 		System.out.println("\n\nE, finalmente, vamos definir as características do Ladino\n\n");
 		ladino.definirCaracteristicas();
-	
+		ladino.definirPontosVida(8);
 		
 		//Clerigo
-		clerigo.definirPontosVida(8);
+		
 		System.out.println("\n\nAgora vamos definir as habilidades do Clérigo\n");
 		clerigo.definirHabilidades();
 		System.out.println("\n\nAgora vamos definir os equipamentos do Clérigo\n\n");
 		clerigo.definirEquipamentos();
 		System.out.println("\n\nE, finalmente, vamos definir as características do Clérigo\n\n");
 		clerigo.definirCaracteristicas();
+		clerigo.definirPontosVida(8);
 		
 		//Mostrar personagens geradas
 		barbaro.Mostrar(); //funciona

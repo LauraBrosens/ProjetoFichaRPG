@@ -61,11 +61,14 @@ public class Ladino extends Personagem{
 	}
 
 	public void definirPontosVida(int dadoLados) {
-		Scanner leia = new Scanner(System.in);
-		int pontosvida = this.getPontosVida();
+		int pontosvida;
 		int nivel = this.getNivel();
-		int constMod = (this.getHabilidade(2) - this.getHabilidade(2)%2)/2 - 5;
+		int constituicao = this.getHabilidade(2);
+		System.out.println("Constituicao puxada = " + constituicao);
+		int constMod = (constituicao - (constituicao%2))/2 - 5;
+		System.out.println("Modificador de Constituicao: " + constMod);
 		pontosvida = dadoLados+constMod;
+		System.out.println("Pontos de vida iniciais calculados: " + pontosvida);
 		/*switch (leia.nextInt()) {
 		case 1:
 			//Rolagem de dado
@@ -75,7 +78,8 @@ public class Ladino extends Personagem{
 		case 2:*/
 		//Fixo
 		dadoLados = dadoLados/2 + 1;
-		pontosvida += (nivel-1)*(dadoLados + constMod);
+		pontosvida = pontosvida + (nivel-1)*(dadoLados + constMod);
+		System.out.println("Pontos de vida totais calculados: " + pontosvida);
 		//	}
 		this.setPontosVida(pontosvida);
 	}
