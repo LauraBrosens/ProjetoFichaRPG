@@ -3,7 +3,7 @@ package fichaRPG;
 import java.io.IOException;
 import java.util.*;
 
-public class rpgMain {
+public class MainFichaRPG {
 	public static void main (String[] args) throws InterruptedException {
 		Scanner leia = new Scanner(System.in);
 		String nomePersonagem, nomeJogador, classe;

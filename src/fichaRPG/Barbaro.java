@@ -87,6 +87,7 @@ public class Barbaro extends Personagem{
 		dadoLados = dadoLados/2 + 1;
 		pontosvida += (nivel-1)*(dadoLados + constMod);
 		//	}
+		this.setPontosVida(pontosvida);
 	}
 	
 	public void Mostrar() {
